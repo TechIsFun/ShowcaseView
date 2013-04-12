@@ -7,6 +7,7 @@ import android.content.res.TypedArray;
 import android.graphics.*;
 import android.graphics.drawable.Drawable;
 import android.os.Build;
+import android.os.Handler;
 import android.text.DynamicLayout;
 import android.text.Layout;
 import android.text.TextPaint;
@@ -474,6 +475,8 @@ public class ShowcaseView extends RelativeLayout implements View.OnClickListener
 			}
 		};
 		handler.postDelayed(runnable, 3000);
+		
+		return as;
 	}
 
 	@Override
